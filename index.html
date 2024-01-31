@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--Nav bar-->
+    <section class="flex justify-between items-center p-5 fixed bg-white z-10 w-full">
+        <h1 class="text-2xl font-bold  ">Nostra</h1>
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <ul class="flex gap-10 hidden md:flex ">
+            <li class="hover:underline">Home</li>
+            <li class="hover:underline">New Arrival</li>
+            <li class="hover:underline">Most Wanted</li>
+           <a  href="collections.html" ><li class="hover:underline">Collections</li></a> 
+           <a href="contact.html" > <li class="hover:underline">Contact Us</li></a>
+        </ul>
+    </section>
+    <!--sidenav-->
+    <section id="sidenav" class=" fixed z-20 top-0 text-white transition-all duration-1000" style="width: 50%; background-color: #1D232C; height: 100vh; left:-50%;">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="block p-10 ">
+            <a href="index.html"><li class="hover:underline p-5">Home</li></a>
+            <li class="hover:underline p-5">New Arrival</li>
+            <li class="hover:underline p-5" >Most Wanted</li>
+           <a href="collections.html"> <li class="hover:underline p-5 ">Collections</li></a>
+           <a href="contact.html" > <li class="hover:underline p-5">Contact Us</li></a>
+        </ul>
+     </section>
+    <!--Image-->
+    <section class="p-5 pt-1">
+        <div class="relative">
+            <img class="w-full md:h-full border rounded h-56" src="./images/slider-one.jpg" alt="summercollections">
+            <p class="absolute top-36 md:text-9xl text-3xl left-10"> <i class="fa-solid fa-chevron-left"
+                    style="color: #f4f5f5;"></i></p>
+            <h1 class="absolute top-24 left-16 text-white text-2xl md:text-7xl md:left-36 font-bold">Level up your style with our </h1>
+            <p class="font-bold absolute top-32 left-36 md:text-xl text-white md:top-48 md:left-1/2">Summer Collections</p>
+            <button class="bg-white top-2/3 left-40  md:p-2 pl-2 pr-2 absolute md:top-2/4 md:left-1/2" style="color:#1D232C; border-radius: 10px; ">Shop Now➡️</button>
+            <p class="absolute top-36 md:text-9xl text-3xl right-10"><i class="fa-solid fa-chevron-right"
+                    style="color: #ffffff;"></i></p>
+        </div>
+    </section>
+    <!--brands-->
+    <section class="md:p-5 p-2">
+        <h1 class="md:text-2xl font-bold">Brands</h1>
+        <ul class="flex justify-between md:text-3xl md:pt-5 text-xs">
+            <li><img src="./images/puma.png" class="md:w-12 w-6">Puma</li>
+            <li><img src="./images/adidas.png" class="md:w-12 w-6"> Adidas</li>
+            <li><img src="./images/simple.png" class="md:w-12 w-6">Simple</li>
+            <li><img src="images/two-leaves.png" class="md:w-12 w-6">Leaves</li>
+            <li><img src="./images/simple.png" class="md:w-12 w-6">Behance</li>
+            <li><img src="./images/adidas.png" class="md:w-12 w-6">Twitch</li>
+            <li><img src="images/two-leaves.png" class="md:w-12 w-6">Leaves</li>
+        </ul>
+    </section>
+    <!--customer experience-->
+    <section class="flex justify-between  md:p-5 p-2">
+        <h1 class="font-bold md:text-4xl text-xs">We provide best<br> customer experiences </h1>
+        <p class="md:text-2xl text-xs" >|| We ensure that our customers have the best shopping experience</p>
+    </section>
+    <!--features-->
+    <section>
+        <div class="flex text-xs justify-between md:gap-5 gap-3 p-5">
+            <div class="bg-blue-100 md:p-5 p-2">
+                <p class="md:text-5xl "> <i class="fa-regular fa-circle-check" style="color: #000205;"></i></p>
+                <h3 class="font-bold text-xs" >Original Products</h3>
+                <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ullam!</p>
+            </div>
+            <div class="bg-blue-100 md:p-5 p-2">
+                <p class="md:text-5xl"> <i class="fa-regular fa-face-smile" style="color: #000205;"></i></p>
+                <h3 class="font-bold">Satisfaction Guarantee</h3>
+                <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ullam!</p>
+            </div>
+            <div class="bg-blue-100 md:p-5 p-2">
+                <p class="md:text-5xl"> <i class="fa-solid fa-folder-open" style="color: #00040a;"></i></i></p>
+                <h3 class="font-bold">New Arrival Everyday</h3>
+                <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ullam!</p>
+            </div>
+            <div class="bg-blue-100 md:p-5 p-2">
+                <p class="md:text-5xl"> <i class="fa-solid fa-truck-fast" style="color: #000000;"></i></p>
+                <h3 class="font-bold">Free & Fast Shipping</h3>
+                <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ullam!</p>
+            </div>
+        </div>
+    </section>
+    <!--New Arrival-->
+    <section class="p-5">
+        <h1 class="text-2xl font-bold ">New Arrivals</h1>
+        <div class="flex  md:h-80 p-1 md:p-5 md:gap-10 gap-3">
+            <div class="relative">
+                <img  src="./images/new arrival 1.jpg" >
+                <div class="overlay border-r-4 bg-black w-full h-full z-20 absolute top-0 opacity-30"></div>
+                <button class="bg-white absolute text-xs md:bottom-1/4 md:left-20 md:p-2 z-30 bottom-6 left-3 p-1 " style="border-radius: 20px; ">Shop Now➡️ </button>
+            </div>
+            <div class="relative">
+                <img class src="./images/new arrival 2.jpg">
+                <div class="overlay border-r-4 bg-black w-full h-full z-20 absolute top-0 opacity-30"></div>
+                <button class="bg-white absolute text-xs md:bottom-1/4 md:left-20 md:p-2 z-30 bottom-6 left-3 p-1 " style="border-radius: 20px; ">Shop Now➡️ </button>
+            </div>
+            <div class="relative">
+                <img  src="./images/new arrival 4.jpg">
+                <div class="overlay border-r-4 bg-black w-full h-full z-20 absolute top-0 opacity-30"></div>
+                <button class="bg-white absolute text-xs md:bottom-1/4 md:left-20 md:p-2 z-30 bottom-6 left-3 p-1 " style="border-radius: 20px; ">Shop Now➡️ </button>
+            </div>
+            <div class="relative">
+                <img  src="./images/new arrival 2.jpg">
+                <div class="overlay border-r-4 bg-black w-full h-full z-20 absolute top-0 opacity-30"></div>
+                <button class="bg-white absolute text-xs md:bottom-1/4 md:left-20 md:p-2 z-30 bottom-6 left-3 p-1 " style="border-radius: 20px; ">Shop Now➡️ </button>
+            </div>
+
+        </div>
+        
+    </section>
+    <!--Most Wanted -->
+    <section class="flex gap-5 md:gap-10 p-5">
+        <div class=" relative">
+            <img class=" h-full" src="./images/mostwanted1.jpg">
+            <button class="top-0 left-0 md:p-2 text-white md:text-4xl absolute pl-2 pr-2" style="background-color:#FF0000 ; border-radius: 3px; ">Sale</button>
+            <p class="absolute right-1 bottom-1 md:text-6xl"><i class="fa-regular fa-heart" style="color: #050505;"></i></p>
+        </div>
+        <div class=" relative">
+            <img class=" h-full" src="./images/mostwanted2.jpg">
+            <button class="top-0 left-0 md:p-2 text-white md:text-4xl absolute pl-2 pr-2" style="background-color:#FF0000 ; border-radius: 3px; ">Sale</button>
+            <p class="absolute right-1 bottom-1 md:text-6xl"><i class="fa-regular fa-heart" style="color: #050505;"></i></p>
+        </div>
+        <div class=" relative">
+            <img class=" h-full" src="./images/mostwanted3.jpg">
+            <button class="top-0 left-0 md:p-2 text-white md:text-4xl absolute pl-2 pr-2" style="background-color:#FF0000 ; border-radius: 3px;">Sale</button>  
+            <p class="absolute right-1 bottom-1 md:text-6xl"><i class="fa-regular fa-heart" style="color: #050505;"></i></p>
+        </div>
+        <div class=" relative">
+            <img class=" h-full" src="./images/mostwanted4.jpg">
+            <button class="top-0 left-0 md:p-2 text-white md:text-4xl absolute pl-2 pr-2" style="background-color:#FF0000 ; border-radius: 3px; ">Sale</button>           
+            <p class="absolute right-1 bottom-1 md:text-6xl"><i class="fa-regular fa-heart" style="color: #050505;"></i></p>
+        </div>
+    </section>
+    
+<!--limited offer-->
+         <div style="background-color:#1D232C;" class="flex m-5 ">
+            <div class="p-5">
+                <img src="./images/limited offer.jpg">
+            </div>
+            <div class="text-white pb-7 md:mt-24 md:ml-12 mt-14">
+            <h1 class="md:text-5xl font-bold">Limited offer</h1>
+            <p class="font-bold md:text-3xl" >35% OFF on this for the first 30 customers</p>
+            <button class="text-white md:p-2 pl-2 pr-2 bg-white" style="color:#1D232C; border-radius: 10px; ">Shop Now➡️</button>
+           </div>
+         </div>
+  <!--newsletter-->
+  <div class="text-center md:text-2xl md:p-10">
+        <h1 class="font-bold md:text-3xl">Join our News Letter</h1>
+        <p >Sign up for our newspaper to get exclusive discounts,updates and more</p><br>
+        <input type="text" class="border-2 border-black w-2/3"><br><br>
+        <button class="p-2 text-white" style="background-color:#1D232C; border-radius: 10px; ">Subscribe➡️</button>
+    </div>
+
+    
+
+    <!--Footer-->
+    <div style="background-color:#1D232C; " class="md:text-2xl text-white p-10 mt-10 ">
+        <h1 class="md:text-5xl font-bold">Nostra</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi voluptas veritatis voluptates ipsa dolorum commodi.</p>
+        <div class="flex gap-14 p-5">
+        <i class="fa-brands fa-instagram" style="color: #fafafa;"></i>
+        <i class="fa-brands fa-twitter" style="color: #fcfcfd;"></i>
+        <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+           
+        </div>
+        <p>@ 2023 Nostra.com</p> 
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
